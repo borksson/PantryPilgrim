@@ -1,1 +1,140 @@
-{"calendar": {"recipeCalendar": []}, "cookbook": {"recipeList": [{"name": "Eat apple.", "ingredientList": [{"base_ingredient": {"name": "Apple", "cost": 3}, "quantity": 2, "worth": 6}], "recipeSteps": ["Eat"], "recipeTime": 0}, {"name": "Eat apple.", "ingredientList": [{"base_ingredient": {"name": "Apple", "cost": 3}, "quantity": 2, "worth": 6}], "recipeSteps": ["Eat"], "recipeTime": 0}], "base_ingredientList": [{"name": "Apple", "cost": 5}, {"name": "Apple", "cost": 5}, {"name": "Apple", "cost": 5}]}, "pantry": {"ingredientInventory": [{"base_ingredient": {"name": "Apple", "cost": 3}, "quantity": 2, "worth": 6}, {"base_ingredient": {"name": "Apple", "cost": 3}, "quantity": 2, "worth": 6}]}}
+{
+    "pantry":
+    {
+        "ingredientInventory":
+        []
+    },
+    "cookbook":
+    {
+        "recipeList":
+        [],
+        "base_ingredientList":
+        []
+    },
+    "calendar":
+    {
+        "recipeCalendar":
+        [
+            {
+                "dts": "9/22/2021",
+                "mealList":
+                [
+                    {
+                        "mealType": "Breakfast",
+                        "recipe":
+                        {
+                            "name": "Eat apple.",
+                            "ingredientList":
+                            [
+                                {
+                                    "base_ingredient":
+                                    {
+                                        "name": "Apple",
+                                        "cost": 3
+                                    },
+                                    "quantity": 2,
+                                    "worth": 6
+                                }
+                            ],
+                            "recipeSteps":
+                            [
+                                "Eat"
+                            ],
+                            "recipeTime": 0
+                        }
+                    }
+                ]
+            },
+            {
+                "dts": "9/23/2021",
+                "mealList":
+                [
+                    {
+                        "mealType": "Breakfast",
+                        "recipe":
+                        {
+                            "name": "Eat apple.",
+                            "ingredientList":
+                            [
+                                {
+                                    "base_ingredient":
+                                    {
+                                        "name": "Apple",
+                                        "cost": 3
+                                    },
+                                    "quantity": 2,
+                                    "worth": 6
+                                }
+                            ],
+                            "recipeSteps":
+                            [
+                                "Eat"
+                            ],
+                            "recipeTime": 0
+                        }
+                    }
+                ]
+            },
+            {
+                "dts": "9/23/2021",
+                "mealList":
+                [
+                    {
+                        "mealType": "Breakfast",
+                        "recipe":
+                        {
+                            "name": "Eat apple.",
+                            "ingredientList":
+                            [
+                                {
+                                    "base_ingredient":
+                                    {
+                                        "name": "Apple",
+                                        "cost": 3
+                                    },
+                                    "quantity": 2,
+                                    "worth": 6
+                                }
+                            ],
+                            "recipeSteps":
+                            [
+                                "Eat"
+                            ],
+                            "recipeTime": 0
+                        }
+                    }
+                ]
+            },
+            {
+                "dts": "9/23/2021",
+                "mealList":
+                [
+                    {
+                        "mealType": "Breakfast",
+                        "recipe":
+                        {
+                            "name": "Eat apple.",
+                            "ingredientList":
+                            [
+                                {
+                                    "base_ingredient":
+                                    {
+                                        "name": "Apple",
+                                        "cost": 3
+                                    },
+                                    "quantity": 2,
+                                    "worth": 6
+                                }
+                            ],
+                            "recipeSteps":
+                            [
+                                "Eat"
+                            ],
+                            "recipeTime": 0
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

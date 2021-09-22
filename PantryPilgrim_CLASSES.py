@@ -25,7 +25,7 @@ class Ingredient:
 		return self.worth
 
 	def toString(self):
-		return "Base Ingredient: " + self.base_ingredient.toString() + "\t\tQuantity: " + str(self.quantity) + "\t\tWorth: " + str(self.worth)
+		return self.base_ingredient.toString() + "\t\tQuantity: " + str(self.quantity) + "\t\tWorth: " + str(self.worth)
 
 	def toOBJ(self):
 		return {"base_ingredient": self.base_ingredient.toOBJ(),"quantity": self.quantity,"worth": self.worth}
@@ -41,7 +41,7 @@ class Recipe:
 	def toString(self):
 		exportSteps = [(str(ind+1)+'. '+step) for ind, step in enumerate(self.recipeSteps)]
 		exportIngredients = [ingredient.toString() for ingredient in self.ingredientList]
-		return "Name: " + self.name + "\nIngredients: " + ", ".join(exportIngredients) + "\nSteps:\n" + '\n'.join(exportSteps) + "\nTime: " + str(self.recipeTime)
+		return "Name: " + self.name + "\nIngredients:\n" + ", ".join(exportIngredients) + "\nSteps:\n" + '\n'.join(exportSteps) + "\nTime: " + str(self.recipeTime)
 
 	def toOBJ(self):
 		return {"name": self.name,"ingredientList": [ingredient.toOBJ() for ingredient in self.ingredientList], "recipeSteps": self.recipeSteps, "recipeTime": self.recipeTime}
@@ -105,16 +105,19 @@ class Date:
 		return "Date: " + self.dts + "\nMeals:\n" + '\n'.join(exportMealList)
 
 	def toOBJ(self):
-		return {"dts": self.dts, "mealList": [meal.toOBJ for meal in self.mealList]}
+		return {"dts": self.dts, "mealList": [meal.toOBJ() for meal in self.mealList]}
 		
 
 class Calendar:
 	def __init__(self, recipeCalendar = []):
 		self.recipeCalendar = recipeCalendar
 
+	def addDate(self, date):
+		self.recipeCalendar.append(date)
+
 	def toString(self):
 		exportCalendar = [date.toString() for date in self.recipeCalendar]
-		return "Calendar:\n" + '\n'.join(recipeCalendar)
+		return "Calendar:\n" + '\n'.join(exportCalendar)
 
 	def toOBJ(self):
 		return {"recipeCalendar": [date.toOBJ() for date in self.recipeCalendar]}
