@@ -30,6 +30,7 @@ newCookbook = pp.Cookbook([pp.Recipe([pp.Ingredient(pp.Base_Ingredient(ingredien
 newCalendar = pp.Calendar([pp.Date(date["dts"], [pp.Meal(meal["mealType"], pp.Recipe([pp.Ingredient(pp.Base_Ingredient(ingredient["base_ingredient"]["name"],ingredient["base_ingredient"]["cost"]), ingredient["quantity"]) for ingredient in meal["recipe"]["ingredientList"]],
  meal["recipe"]["recipeSteps"], meal["recipe"]["recipeTime"], meal["recipe"]["name"])) for meal in date["mealList"]]) for date in save["calendar"]["recipeCalendar"]])
 
+# Populate cookbook (recipes and base ingredients)
 
 
 
